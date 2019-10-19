@@ -1,0 +1,14 @@
+<RCC>
+  <qresource prefix="source">
+    <file>img/ico.png</file>
+    <file>img/refresh.png</file>
+    <file>img/comm.png</file>
+    <file>img/connect.png</file>
+    <file>img/help.png</file>
+    <file>img/option.png</file>
+    <file>img/save.png</file>
+    <file>img/start.png</file>
+    <file>img/stop.png</file>
+    <file>img/upgrade.png</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,133 @@
+[{
+  "type": "group",
+  "name": "Basic parameter data types",
+  "children": [{
+    "type": "int",
+    "name": "Integer",
+    "value": 10
+  }, {
+    "step": 0.1,
+    "type": "float",
+    "name": "Float",
+    "value": 10.5
+  }, {
+    "type": "str",
+    "name": "String",
+    "value": "hi"
+  }, {
+    "values": [1, 2, 3],
+    "type": "list",
+    "name": "List",
+    "value": 2
+  }, {
+    "values": {
+      "three": [3, 3, 3],
+      "two": "twosies",
+      "one": 1
+    },
+    "type": "list",
+    "name": "Named List",
+    "value": 2
+  }, {
+    "tip": "This is a checkbox",
+    "type": "bool",
+    "name": "Boolean",
+    "value": true
+  }, {
+    "tip": "This is a color button",
+    "type": "color",
+    "name": "Color",
+    "value": "FF0"
+  }, {
+    "type": "colormap",
+    "name": "Gradient"
+  }, {
+    "type": "group",
+    "name": "Subgroup",
+    "children": [{
+      "type": "int",
+      "name": "Sub-param 1",
+      "value": 10
+    }, {
+      "type": "float",
+      "name": "Sub-param 2",
+      "value": 1200000.0
+    }]
+  }, {
+    "type": "text",
+    "name": "Text Parameter",
+    "value": "Some text..."
+  }, {
+    "type": "action",
+    "name": "Action Parameter"
+  }]
+}, {
+  "type": "group",
+  "name": "Numerical Parameter Options",
+  "children": [{
+    "name": "Units + SI prefix",
+    "siPrefix": true,
+    "value": 1.2e-06,
+    "step": 1e-06,
+    "type": "float",
+    "suffix": "V"
+  }, {
+    "default": -6,
+    "limits": [7, 15],
+    "type": "int",
+    "name": "Limits (min=7;max=15)",
+    "value": 11
+  }, {
+    "name": "DEC stepping",
+    "siPrefix": true,
+    "value": 1200000.0,
+    "step": 1,
+    "dec": true,
+    "type": "float",
+    "suffix": "Hz"
+  }]
+}, {
+  "type": "group",
+  "name": "Save/Restore functionality",
+  "children": [{
+    "type": "action",
+    "name": "Save State"
+  }, {
+    "type": "action",
+    "name": "Restore State",
+    "children": [{
+      "type": "bool",
+      "name": "Add missing items",
+      "value": true
+    }, {
+      "type": "bool",
+      "name": "Remove extra items",
+      "value": true
+    }]
+  }]
+}, {
+  "type": "group",
+  "name": "Extra Parameter Options",
+  "children": [{
+    "name": "Read-only",
+    "siPrefix": true,
+    "value": 1200000.0,
+    "readonly": true,
+    "type": "float",
+    "suffix": "Hz"
+  }, {
+    "name": "Renamable",
+    "renamable": true,
+    "siPrefix": true,
+    "value": 1200000.0,
+    "type": "float",
+    "suffix": "Hz"
+  }, {
+    "name": "Removable",
+    "siPrefix": true,
+    "value": 1200000.0,
+    "removable": true,
+    "type": "float",
+    "suffix": "Hz"
+  }]
+}]

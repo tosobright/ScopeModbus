@@ -1,0 +1,83 @@
+[{
+  "type": "group",
+  "name": "基本参数",
+  "children": [{
+    "type": "int",
+    "name": "Total",
+    "value": 0,
+    "func": 3,
+    "func1": 0,
+    "startaddr": 0,
+    "length": 1,
+    "readonly": true
+  }, {
+    "type": "float",
+    "name": "Oil",
+    "value": 0.0,
+    "siPrefix": true,
+    "suffix": "ml",
+    "func": 3,
+    "func1": 0,
+    "startaddr": 1,
+    "length": 2,
+    "readonly": true
+  }]
+}, {
+  "type": "group",
+  "name": "选项参数",
+  "children": [{
+    "type": "int",
+    "name": "value",
+    "func": 3,
+    "func1": 16,
+    "startaddr": 3,
+    "length": 1
+  }, {
+    "name": "Limits (min=7;max=15)",
+    "type": "int",
+    "value": 11,
+    "limits": [7, 15],
+    "func": 3,
+    "func1": 16,
+    "startaddr": 4,
+    "length": 1
+  }, {
+    "values": [9600, 19200, 115200],
+    "type": "list",
+    "name": "BaudRate",
+    "value": 0,
+    "func": 3,
+    "func1": 16,
+    "startaddr": 5,
+    "length": 1
+  }, {
+    "values": ["None", "Odd", "Even"],
+    "type": "list",
+    "name": "Parity",
+    "value": 0,
+    "func": 3,
+    "func1": 16,
+    "startaddr": 6,
+    "length": 1
+  }]
+}, {
+  "type": "group",
+  "name": "扩展参数",
+  "children": [{
+    "type": "float",
+    "name": "Extra",
+    "value": 0,
+    "func": 3,
+    "func1": 16,
+    "startaddr": 7,
+    "length": 2
+  }, {
+    "type": "bool",
+    "name": "Upto",
+    "value": true,
+    "func": 3,
+    "func1": 16,
+    "startaddr": 9,
+    "length": 1
+  }]
+}]
